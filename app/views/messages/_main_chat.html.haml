@@ -1,0 +1,32 @@
+.chat-main
+  .chat-main__header
+    .chat-main__header__left-box
+      .chat-main__header__left-box__group-name
+        遊び
+      .chat-main__header__left-box__group-member
+        member:chika
+    .chat-main__header__right-box
+      .chat-main__header__right-box__btn
+        = link_to "#" do
+          Edit
+
+  .chat-main__contents
+    .chat-main__contents__message-box
+      .chat-main__contents__message-box__up
+        .chat-main__contents__message-box__up__member
+          CHIKA
+        .chat-main__contents__message-box__up__date
+          2020/03/01
+      .chat-main__contents__message-box__under
+        おはよう！
+
+  .chat-main__form
+    .chat-main__form__text-area
+      .chat-main__form__text-area__text
+        type a message
+      .chat-main__form__text-area__image
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file",class: 'file'}
+    .chat-main__form__send-btn
+      SEND
